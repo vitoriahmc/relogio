@@ -1,0 +1,323 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/vitor/Desktop/relogio/simulation/qsim
+Efluxodedados
+Z1 w1538056412
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+Z10 8relogio_descomp.vho
+Z11 Frelogio_descomp.vho
+l0
+L37
+VKG>0aemI6jMcLO1a4VZS=2
+!s100 mGP]LIShOE4G=1]CemJKL1
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1538056413
+!i10b 1
+Z14 !s108 1538056413.000000
+Z15 !s90 -work|work|relogio_descomp.vho|
+Z16 !s107 relogio_descomp.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 12 fluxodedados 0 22 KG>0aemI6jMcLO1a4VZS=2
+l128
+L51
+Vmi]^1[FmCJHG@D<>=QTHb3
+!s100 hPXcEeD@52g?=TK;eHm_j1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Efluxodedados_vhd_vec_tst
+Z19 w1538056411
+R7
+R8
+R0
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
+l0
+L32
+VofJOG`UY>1Sdbzk>gO;UH3
+!s100 ;efKTzUS8Xb2dN5[YIk6o0
+R12
+32
+Z22 !s110 1538056414
+!i10b 1
+Z23 !s108 1538056414.000000
+Z24 !s90 -work|work|Waveform1.vwf.vht|
+Z25 !s107 Waveform1.vwf.vht|
+!i113 1
+R17
+R18
+Afluxodedados_arch
+R7
+R8
+DEx4 work 24 fluxodedados_vhd_vec_tst 0 22 ofJOG`UY>1Sdbzk>gO;UH3
+l59
+L34
+VCJfOD[haIDSJlU:UQLSC90
+!s100 ;2jT6_KA>LmR1=Iheaz2]3
+R12
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R17
+R18
+Ehard_block
+Z26 w1538063156
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+32
+Z27 !s110 1538063158
+!i10b 1
+Z28 !s108 1538063158.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+32
+R27
+!i10b 1
+R28
+R15
+R16
+!i113 1
+R17
+R18
+Erelogio_descomp
+R26
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R0
+R10
+R11
+l0
+L80
+V_dl_VXTbAk@@lWW>6<07F1
+!s100 GBWlJnU:MjPzhXbX4o^3R1
+R12
+32
+R27
+!i10b 1
+R28
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 15 relogio_descomp 0 22 _dl_VXTbAk@@lWW>6<07F1
+l350
+L177
+VGm_Og2[cnYJI7WV967:fc0
+!s100 CkD2eXF[CTg]@WKEQZI?;3
+R12
+32
+R27
+!i10b 1
+R28
+R15
+R16
+!i113 1
+R17
+R18
+Erelogio_descomp_vhd_vec_tst
+Z29 w1538063154
+R7
+R8
+R0
+Z30 8output_files/Waveform2.vwf.vht
+Z31 Foutput_files/Waveform2.vwf.vht
+l0
+L32
+VT`WG9iSFJ0f]KgPMQzil41
+!s100 no3bE?F74Z0`jmcQI_A2n1
+R12
+32
+R27
+!i10b 1
+R28
+Z32 !s90 -work|work|output_files/Waveform2.vwf.vht|
+Z33 !s107 output_files/Waveform2.vwf.vht|
+!i113 1
+R17
+R18
+Arelogio_descomp_arch
+R7
+R8
+Z34 DEx4 work 27 relogio_descomp_vhd_vec_tst 0 22 T`WG9iSFJ0f]KgPMQzil41
+l65
+L34
+VhRM>dP@Z4^KKE;Zn<[[`40
+!s100 JiLnn?_3kBa[Y_U?cK?R:3
+R12
+32
+R27
+!i10b 1
+R28
+R32
+R33
+!i113 1
+R17
+R18
+Eula
+Z35 w1538055494
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L35
+VE10dkNmJ<bo0[O<M9ozCG3
+!s100 Wg6E8B1g3?4^LMdCF1=NY3
+R12
+32
+Z36 !s110 1538055496
+!i10b 1
+Z37 !s108 1538055496.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 3 ula 0 22 E10dkNmJ<bo0[O<M9ozCG3
+l98
+L44
+V2RE7cIdLf97EoA1T`OOoL0
+!s100 Yo`A4F@E5g_H`WTPY1Ha92
+R12
+32
+R36
+!i10b 1
+R37
+R15
+R16
+!i113 1
+R17
+R18
+Eula_vhd_vec_tst
+Z38 w1538055492
+R7
+R8
+R0
+Z39 8output_files/Waveform.vwf.vht
+Z40 Foutput_files/Waveform.vwf.vht
+l0
+L32
+VKm3Jcgf^fQF4QLG>Z;mfj2
+!s100 >OFVREDf6@nYoG_2QlDQ?1
+R12
+32
+Z41 !s110 1538055497
+!i10b 1
+Z42 !s108 1538055497.000000
+Z43 !s90 -work|work|output_files/Waveform.vwf.vht|
+Z44 !s107 output_files/Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Aula_arch
+R7
+R8
+DEx4 work 15 ula_vhd_vec_tst 0 22 Km3Jcgf^fQF4QLG>Z;mfj2
+l49
+L34
+V^LR1Q9ZS`aYf6U3ciiVQZ0
+!s100 ]E5AJA0BSHY`N>Ff7R04n3
+R12
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R17
+R18

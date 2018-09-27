@@ -1,0 +1,80 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity relogio_descomp is
+  port (
+    -- Entradas (placa)
+    CLOCK_50 : in STD_LOGIC;
+    KEY: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SW: in STD_LOGIC_VECTOR(17 DOWNTO 0);
+
+    -- Saidas (placa)
+    LEDR  : out STD_LOGIC_VECTOR(17 DOWNTO 0) := (others => '0');
+    LEDG  : out STD_LOGIC_VECTOR(8 DOWNTO 0) := (others => '0');
+    HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0)
+  );
+end entity;
+
+
+architecture comportamento of relogio_descomp is
+	signal Mux6_aux: std_logic_vector(2 downto 0) := "000";
+	signal Mux5_aux: std_logic_vector(2 downto 0) := "000";
+	signal ula_func_aux: std_logic_vector(1 downto 0) := "00";
+	signal state_aux	  : std_logic_vector(4 downto 0) := "00000";
+	 
+
+	signal EnUS_aux:  std_logic := '0';
+
+	signal but_divisor :  std_logic := '0';
+
+	signal sw_value : std_logic_vector(3 downto 0) := "0000";
+
+	signal Z_aux	  : std_logic;
+
+	signal US_out_aux: std_logic_vector(3 downto 0);
+	
+	signal palavra : std_logic_vector(11 downto 0);
+	
+	signal divisor_clk: std_logic_vector(24 downto 0) := "1011111010111100001000000";
+begin
+
+  FD : entity work.fluxoDados (fluxo_arch) 
+    Port map (
+		mux => mux6_aux, mux5x1 => mux5_aux, ula_func => ula_func_aux,
+      clk => CLOCK_50, rst => auxReset,
+		EnUS => EnUS_aux,
+		Z => Z_aux, US_out => US_out_aux
+    );
+
+  -- Displays e Leds:
+  freqPisca : entity work.divisorGenerico (divisaoGenerica)  generic map (divisor => 25) --(divisaoGenerica) := 2^divisor  
+    port map (clk =>  auxClock, saida_clk => pisca);
+
+  -- Resultado da operacao executada:
+  display0 : entity work.conversorHex7seg
+    Port map (saida7seg => HEX0, dadoHex => US_out_aux);
+
+	sequenciador : entity work.SM1
+    port map( reset => auxReset, clock => CLOCK_50,
+				  Z => Z_aux);
+	
+	process(clk_digital, um_ajusta)
+	begin
+		if(rising_edge(clk_digital)) then
+			um_seg <= '1';
+		end if;
+		if(um_ajusta = '1') then
+			um_seg <= '0';
+		end if;
+	end process;
+
+	EnUS_aux <= palavra(8 downto 6);
+
+	ula_func_aux <= palavra(11 downto 9);
+	mux5_aux <= palavra(5 downto 3);
+	mux6_aux <= palavra(2 downto 0);
+	
+	but_divisor<= KEY(0);
+
+end architecture;

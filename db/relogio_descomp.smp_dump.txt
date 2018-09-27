@@ -1,0 +1,23 @@
+
+State Machine - |relogio_descomp|SM1:mef|fstate
+Name fstate.IncrementaDH fstate.ZeraUH_2 fstate.ComparaUHCom10 fstate.ZeraDH fstate.ZeraUH fstate.ComparaDHCom2 fstate.ComparaUHCom4 fstate.IncrementaUH fstate.ZeraDM fstate.ComparaDMCom6 fstate.IncrementaDM fstate.ComparaUMCom10 fstate.ZeraUM fstate.ZeraDS fstate.IncrementaUM fstate.ComparaDSCom6 fstate.IncrementaDS fstate.ZeraUS fstate.ComparaUSCom9 fstate.IncrementaUS 
+fstate.IncrementaUS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.ComparaUSCom9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.ZeraUS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.IncrementaDS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.ComparaDSCom6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.IncrementaUM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.ZeraDS 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.ZeraUM 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.ComparaUMCom10 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.IncrementaDM 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.ComparaDMCom6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.ZeraDM 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+fstate.IncrementaUH 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ComparaUHCom4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ComparaDHCom2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ZeraUH 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ZeraDH 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ComparaUHCom10 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.ZeraUH_2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.IncrementaDH 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
