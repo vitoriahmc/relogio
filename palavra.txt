@@ -9,11 +9,11 @@ se for true
 Dezena segundo
 010000001000000_zera_o_registrador_us
 000000010001001_incrementa_1_no_registrador_ds=1
-100000000110001_compara_o_registrador_ds_com_5=F
+100000000011001_compara_o_registrador_ds_com_6=F
 se for true
 
 Unidade minuto
-010000010110001_zera_o_registrador_ds
+010000010011001_zera_o_registrador_ds
 000000100001010_incrementa_1_no_registrador_um=1
 100000000000010_compara_o_registrador_um_com_9=F
 se for true
@@ -21,11 +21,11 @@ se for true
 Dezena minuto
 010000100000010_zera_o_registrador_um
 000001000001011_incrementa_1_no_registrador_dm=1
-100000000110011_compara_o_registrador_ds_com_5=F
+100000000011011_compara_o_registrador_dm_com_6=F
 se for true
 
 Unidade hora
-010001000110011_zera_o_registrador_dm
+010001000011011_zera_o_registrador_dm
 100000000100100_compara_o_registrador_uh_com_3=F
 se for true
 100000000010101_compara_o_registrador_dh_com_1=F
@@ -34,7 +34,7 @@ se for true
 010100000010101_zera_o_registrador_dh
 
 se nao
-000100000001100_incrementa_1_no_registrador_uh=1
+000010000001100_incrementa_1_no_registrador_uh=1
 100000000000100_compara_o_registrador_uh_com_10=F
 se for true
 
