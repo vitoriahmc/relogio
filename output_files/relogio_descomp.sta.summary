@@ -2,76 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'ClockPrescaler:prescaler|newClock'
-Slack : -6.558
-TNS   : -201.094
-
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -4.583
-TNS   : -85.347
+Slack : -12.601
+TNS   : -422.949
 
-Type  : Slow 1200mV 85C Model Hold 'ClockPrescaler:prescaler|newClock'
-Slack : 0.607
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'SW[0]'
+Slack : -8.679
+TNS   : -72.562
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.640
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SW[0]'
+Slack : 0.452
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -35.125
+TNS   : -91.665
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockPrescaler:prescaler|newClock'
-Slack : -1.285
-TNS   : -56.540
-
-Type  : Slow 1200mV 0C Model Setup 'ClockPrescaler:prescaler|newClock'
-Slack : -5.959
-TNS   : -181.050
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -28.700
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -4.099
-TNS   : -75.551
+Slack : -11.593
+TNS   : -384.923
 
-Type  : Slow 1200mV 0C Model Hold 'ClockPrescaler:prescaler|newClock'
-Slack : 0.555
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'SW[0]'
+Slack : -7.851
+TNS   : -64.984
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.586
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SW[0]'
+Slack : 0.418
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -35.125
+TNS   : -91.665
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockPrescaler:prescaler|newClock'
-Slack : -1.285
-TNS   : -56.540
-
-Type  : Fast 1200mV 0C Model Setup 'ClockPrescaler:prescaler|newClock'
-Slack : -2.717
-TNS   : -77.866
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -28.700
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.825
-TNS   : -28.761
+Slack : -5.561
+TNS   : -171.214
 
-Type  : Fast 1200mV 0C Model Hold 'ClockPrescaler:prescaler|newClock'
-Slack : 0.267
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'SW[0]'
+Slack : -3.611
+TNS   : -28.181
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.292
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SW[0]'
+Slack : 0.201
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -29.525
+TNS   : -76.554
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockPrescaler:prescaler|newClock'
-Slack : -1.000
-TNS   : -44.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -34.166
 
 ------------------------------------------------------------

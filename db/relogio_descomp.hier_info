@@ -1,9 +1,29 @@
 |relogio_descomp
+CLOCK_50 => fluxodedados:FD.clk
 CLOCK_50 => clockprescaler:prescaler.clock
+CLOCK_50 => clockprescaler2:prescaler2.clock
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
+SW[0] => mux2:mux_2.SEL
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
 HEX2[0] <= conversorhex7seg:display0.saida7seg[0]
 HEX2[1] <= conversorhex7seg:display0.saida7seg[1]
 HEX2[2] <= conversorhex7seg:display0.saida7seg[2]
@@ -64,6 +84,7 @@ clk => registrador:UM_regist.clk
 clk => registrador:DM_regist.clk
 clk => registrador:UH_regist.clk
 clk => registrador:DH_regist.clk
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 US_enable => registrador:US_regist.enable
 US_reset => registrador:US_regist.reset
 DS_enable => registrador:DS_regist.enable
@@ -76,7 +97,6 @@ UH_enable => registrador:UH_regist.enable
 UH_reset => registrador:UH_regist.reset
 DH_enable => registrador:DH_regist.enable
 DH_reset => registrador:DH_regist.reset
-Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 US_saida[0] <= registrador:US_regist.q[0]
 US_saida[1] <= registrador:US_regist.q[1]
 US_saida[2] <= registrador:US_regist.q[2]
@@ -394,6 +414,37 @@ clock => prescaler_counter[21].CLK
 clock => prescaler_counter[22].CLK
 clock => prescaler_counter[23].CLK
 final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|ClockPrescaler2:prescaler2
+clock => newClock.CLK
+clock => prescaler_counter[0].CLK
+clock => prescaler_counter[1].CLK
+clock => prescaler_counter[2].CLK
+clock => prescaler_counter[3].CLK
+clock => prescaler_counter[4].CLK
+clock => prescaler_counter[5].CLK
+clock => prescaler_counter[6].CLK
+clock => prescaler_counter[7].CLK
+clock => prescaler_counter[8].CLK
+clock => prescaler_counter[9].CLK
+clock => prescaler_counter[10].CLK
+clock => prescaler_counter[11].CLK
+clock => prescaler_counter[12].CLK
+clock => prescaler_counter[13].CLK
+clock => prescaler_counter[14].CLK
+clock => prescaler_counter[15].CLK
+clock => prescaler_counter[16].CLK
+clock => prescaler_counter[17].CLK
+clock => prescaler_counter[18].CLK
+final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|mux2:mux_2
+SEL => Y.OUTPUTSELECT
+A => Y.DATAB
+B => Y.DATAA
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio_descomp|conversorHex7Seg:display0

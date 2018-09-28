@@ -6,8 +6,8 @@ entity fluxodedados is
     Port (
 			mux1, mux2, ula_func: in std_logic_vector(2 downto 0);	 
 			clk:  in std_logic;
-			US_enable, US_reset, DS_enable, DS_reset, UM_enable, UM_reset, DM_enable, DM_reset, UH_enable, UH_reset, DH_enable, DH_reset : in std_logic;
 			Z : out std_logic;
+			US_enable, US_reset, DS_enable, DS_reset, UM_enable, UM_reset, DM_enable, DM_reset, UH_enable, UH_reset, DH_enable, DH_reset : in std_logic;
 			US_saida, DS_saida, UM_saida, DM_saida, UH_saida, DH_saida:	out std_logic_vector(3 downto 0)
 			);
 end entity;
@@ -17,7 +17,7 @@ architecture fluxo_arch of fluxodedados is
   
 begin
 
-	ULA:	 entity work.ULA port map (A => mux_regs_saida, B => mux_vars_saida, func => ula_func, Q => ula_saida);
+	ULA: entity work.ULA port map (A => mux_regs_saida, B => mux_vars_saida, func => ula_func, Q => ula_saida);
 
 	US_regist: entity work.registrador generic map (Vector_Size => 4) port map (d => ula_saida, q => US, CLK => clk, reset => US_reset, ENABLE => US_enable);
 	DS_regist: entity work.registrador generic map (Vector_Size => 4) port map (d => ula_saida, q => DS, CLK => clk, reset => DS_reset, ENABLE => DS_enable);

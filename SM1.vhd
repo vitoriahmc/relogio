@@ -171,7 +171,7 @@ BEGIN
                         reg_fstate <= ComparaUHCom10;
                     END IF;
 
-                    reg_palavra <= "100000000000000";
+                    reg_palavra <= "100000000000100";
                 WHEN ZeraUH_2 =>
                     reg_fstate <= IncrementaDH;
 
