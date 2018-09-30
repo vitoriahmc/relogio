@@ -1,6 +1,6 @@
 Analysis & Synthesis report for relogio_descomp
-Thu Sep 27 20:58:52 2018
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Fri Sep 28 17:17:28 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -40,7 +40,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -48,20 +48,19 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 27 20:58:52 2018       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 28 17:17:28 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; relogio_descomp                             ;
 ; Top-level Entity Name              ; relogio_descomp                             ;
 ; Family                             ; Cyclone IV E                                ;
@@ -91,7 +90,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -144,7 +143,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -180,22 +179,22 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                               ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
-; relogio_descomp.vhd              ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd  ;         ;
-; mux.vhd                          ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/mux.vhd              ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/registrador.vhd      ;         ;
-; ula.vhd                          ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/ula.vhd              ;         ;
-; fluxodedados.vhd                 ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/fluxodedados.vhd     ;         ;
-; SM1.vhd                          ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/SM1.vhd              ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/conversorHex7Seg.vhd ;         ;
-; ClockPrescaler.vhd               ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/ClockPrescaler.vhd   ;         ;
-; ClockPrescaler2.vhd              ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/ClockPrescaler2.vhd  ;         ;
-; mux2.vhd                         ; yes             ; User VHDL File  ; C:/Users/vitor/Desktop/relogio/mux2.vhd             ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; relogio_descomp.vhd              ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd  ;         ;
+; mux.vhd                          ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd              ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/registrador.vhd      ;         ;
+; ula.vhd                          ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ula.vhd              ;         ;
+; fluxodedados.vhd                 ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd     ;         ;
+; SM1.vhd                          ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/SM1.vhd              ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/conversorHex7Seg.vhd ;         ;
+; ClockPrescaler.vhd               ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler.vhd   ;         ;
+; ClockPrescaler2.vhd              ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler2.vhd  ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File  ; /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd             ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -224,7 +223,7 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 69             ;
+; Maximum fan-out                             ; 45             ;
 ; Total fan-out                               ; 904            ;
 ; Average fan-out                             ; 2.29           ;
 +---------------------------------------------+----------------+
@@ -245,7 +244,7 @@ agreement for further details.
 ;    |conversorHex7Seg:display3|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display3             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display4|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display4             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display5|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display5             ; conversorHex7Seg ; work         ;
-;    |fluxodedados:FD|            ; 42 (2)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD                       ; fluxodedados     ; work         ;
+;    |fluxodedados:FD|            ; 42 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD                       ; fluxodedados     ; work         ;
 ;       |mux:mux_regs|            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|mux:mux_regs          ; mux              ; work         ;
 ;       |mux:mux_vars|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|mux:mux_vars          ; mux              ; work         ;
 ;       |registrador:DH_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:DH_regist ; registrador      ; work         ;
@@ -254,7 +253,7 @@ agreement for further details.
 ;       |registrador:UH_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:UH_regist ; registrador      ; work         ;
 ;       |registrador:UM_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:UM_regist ; registrador      ; work         ;
 ;       |registrador:US_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:US_regist ; registrador      ; work         ;
-;       |ula:ULA|                 ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|ula:ULA               ; ula              ; work         ;
+;       |ula:ULA|                 ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|ula:ULA               ; ula              ; work         ;
 ;    |mux2:mux_2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|mux2:mux_2                            ; mux2             ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -310,7 +309,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |relogio_descomp|fluxodedados:FD|ula:ULA|Q[3]      ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |relogio_descomp|fluxodedados:FD|mux:mux_regs|Mux0 ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |relogio_descomp|fluxodedados:FD|mux:mux_regs|Mux1 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
@@ -518,7 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -527,99 +526,99 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Sep 27 20:58:31 2018
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Sep 28 17:16:30 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio_descomp -c relogio_descomp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio_descomp.vhd
-    Info (12022): Found design unit 1: relogio_descomp-comportamento File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 18
-    Info (12023): Found entity 1: relogio_descomp File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 5
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 4
+    Info (12022): Found design unit 1: relogio_descomp-comportamento File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 18
+    Info (12023): Found entity 1: relogio_descomp File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 5
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-mux_arch File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 10
-    Info (12023): Found entity 1: mux File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 4
+    Info (12022): Found design unit 1: mux-mux_arch File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 10
+    Info (12023): Found entity 1: mux File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-reg_arch File: C:/Users/vitor/Desktop/relogio/registrador.vhd Line: 15
-    Info (12023): Found entity 1: registrador File: C:/Users/vitor/Desktop/relogio/registrador.vhd Line: 4
+    Info (12022): Found design unit 1: registrador-reg_arch File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/registrador.vhd Line: 15
+    Info (12023): Found entity 1: registrador File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/registrador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ula-Behavioral File: C:/Users/vitor/Desktop/relogio/ula.vhd Line: 13
-    Info (12023): Found entity 1: ula File: C:/Users/vitor/Desktop/relogio/ula.vhd Line: 5
+    Info (12022): Found design unit 1: ula-Behavioral File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ula.vhd Line: 14
+    Info (12023): Found entity 1: ula File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ula.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxodedados.vhd
-    Info (12022): Found design unit 1: fluxodedados-fluxo_arch File: C:/Users/vitor/Desktop/relogio/fluxodedados.vhd Line: 15
-    Info (12023): Found entity 1: fluxodedados File: C:/Users/vitor/Desktop/relogio/fluxodedados.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file sm1.vhd
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/Users/vitor/Desktop/relogio/SM1.vhd Line: 31
-    Info (12023): Found entity 1: SM1 File: C:/Users/vitor/Desktop/relogio/SM1.vhd Line: 22
-Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/vitor/Desktop/relogio/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/vitor/Desktop/relogio/conversorHex7Seg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file clockprescaler.vhd
-    Info (12022): Found design unit 1: ClockPrescaler-Behavioral File: C:/Users/vitor/Desktop/relogio/ClockPrescaler.vhd Line: 12
-    Info (12023): Found entity 1: ClockPrescaler File: C:/Users/vitor/Desktop/relogio/ClockPrescaler.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file clockprescaler2.vhd
-    Info (12022): Found design unit 1: ClockPrescaler2-Behavioral File: C:/Users/vitor/Desktop/relogio/ClockPrescaler2.vhd Line: 12
-    Info (12023): Found entity 1: ClockPrescaler2 File: C:/Users/vitor/Desktop/relogio/ClockPrescaler2.vhd Line: 5
+    Info (12022): Found design unit 1: fluxodedados-fluxo_arch File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd Line: 15
+    Info (12023): Found entity 1: fluxodedados File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file SM1.vhd
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/SM1.vhd Line: 31
+    Info (12023): Found entity 1: SM1 File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/SM1.vhd Line: 22
+Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ClockPrescaler.vhd
+    Info (12022): Found design unit 1: ClockPrescaler-Behavioral File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler.vhd Line: 12
+    Info (12023): Found entity 1: ClockPrescaler File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ClockPrescaler2.vhd
+    Info (12022): Found design unit 1: ClockPrescaler2-Behavioral File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler2.vhd Line: 12
+    Info (12023): Found entity 1: ClockPrescaler2 File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler2.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: mux2-mux2_arch File: C:/Users/vitor/Desktop/relogio/mux2.vhd Line: 11
-    Info (12023): Found entity 1: mux2 File: C:/Users/vitor/Desktop/relogio/mux2.vhd Line: 4
+    Info (12022): Found design unit 1: mux2-mux2_arch File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd Line: 11
+    Info (12023): Found entity 1: mux2 File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd Line: 4
 Info (12127): Elaborating entity "relogio_descomp" for the top level hierarchy
-Info (12129): Elaborating entity "fluxodedados" using architecture "A:fluxo_arch" for hierarchy "fluxodedados:FD" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 34
-Info (12128): Elaborating entity "ula" for hierarchy "fluxodedados:FD|ula:ULA" File: C:/Users/vitor/Desktop/relogio/fluxodedados.vhd Line: 20
-Warning (10036): Verilog HDL or VHDL warning at ula.vhd(15): object "R1" assigned a value but never read File: C:/Users/vitor/Desktop/relogio/ula.vhd Line: 15
-Warning (10036): Verilog HDL or VHDL warning at ula.vhd(15): object "R2" assigned a value but never read File: C:/Users/vitor/Desktop/relogio/ula.vhd Line: 15
-Info (12128): Elaborating entity "registrador" for hierarchy "fluxodedados:FD|registrador:US_regist" File: C:/Users/vitor/Desktop/relogio/fluxodedados.vhd Line: 22
-Info (12128): Elaborating entity "mux" for hierarchy "fluxodedados:FD|mux:mux_regs" File: C:/Users/vitor/Desktop/relogio/fluxodedados.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at mux.vhd(16): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 16
-Warning (10492): VHDL Process Statement warning at mux.vhd(18): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 18
-Warning (10492): VHDL Process Statement warning at mux.vhd(20): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at mux.vhd(22): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at mux.vhd(24): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at mux.vhd(26): signal "F" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux.vhd Line: 26
-Info (12128): Elaborating entity "ClockPrescaler" for hierarchy "ClockPrescaler:prescaler" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 49
-Warning (10540): VHDL Signal Declaration warning at ClockPrescaler.vhd(14): used explicit default value for signal "prescaler" because signal was never assigned a value File: C:/Users/vitor/Desktop/relogio/ClockPrescaler.vhd Line: 14
-Info (12128): Elaborating entity "ClockPrescaler2" for hierarchy "ClockPrescaler2:prescaler2" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 54
-Warning (10540): VHDL Signal Declaration warning at ClockPrescaler2.vhd(14): used explicit default value for signal "prescaler" because signal was never assigned a value File: C:/Users/vitor/Desktop/relogio/ClockPrescaler2.vhd Line: 14
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:mux_2" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at mux2.vhd(17): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux2.vhd Line: 17
-Warning (10492): VHDL Process Statement warning at mux2.vhd(19): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/vitor/Desktop/relogio/mux2.vhd Line: 19
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 62
-Info (12128): Elaborating entity "SM1" for hierarchy "SM1:mef" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 80
+Info (12129): Elaborating entity "fluxodedados" using architecture "A:fluxo_arch" for hierarchy "fluxodedados:FD" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 34
+Info (12128): Elaborating entity "ula" for hierarchy "fluxodedados:FD|ula:ULA" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd Line: 20
+Warning (10036): Verilog HDL or VHDL warning at ula.vhd(16): object "R1" assigned a value but never read File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ula.vhd Line: 16
+Warning (10036): Verilog HDL or VHDL warning at ula.vhd(16): object "R2" assigned a value but never read File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ula.vhd Line: 16
+Info (12128): Elaborating entity "registrador" for hierarchy "fluxodedados:FD|registrador:US_regist" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd Line: 22
+Info (12128): Elaborating entity "mux" for hierarchy "fluxodedados:FD|mux:mux_regs" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/fluxodedados.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at mux.vhd(16): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 16
+Warning (10492): VHDL Process Statement warning at mux.vhd(18): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 18
+Warning (10492): VHDL Process Statement warning at mux.vhd(20): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 20
+Warning (10492): VHDL Process Statement warning at mux.vhd(22): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at mux.vhd(24): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at mux.vhd(26): signal "F" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux.vhd Line: 26
+Info (12128): Elaborating entity "ClockPrescaler" for hierarchy "ClockPrescaler:prescaler" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 49
+Warning (10540): VHDL Signal Declaration warning at ClockPrescaler.vhd(14): used explicit default value for signal "prescaler" because signal was never assigned a value File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler.vhd Line: 14
+Info (12128): Elaborating entity "ClockPrescaler2" for hierarchy "ClockPrescaler2:prescaler2" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 54
+Warning (10540): VHDL Signal Declaration warning at ClockPrescaler2.vhd(14): used explicit default value for signal "prescaler" because signal was never assigned a value File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/ClockPrescaler2.vhd Line: 14
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:mux_2" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at mux2.vhd(17): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at mux2.vhd(19): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd Line: 19
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 62
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:mef" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 80
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer mux2:mux_2|Y~0 File: C:/Users/vitor/Desktop/relogio/mux2.vhd Line: 7
+    Warning (19017): Found clock multiplexer mux2:mux_2|Y File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/mux2.vhd Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 21 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/vitor/Desktop/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 9
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 9
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[10]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[11]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[12]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[13]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[14]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[15]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[16]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[17]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
 Info (21057): Implemented 275 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 210 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Thu Sep 27 20:58:52 2018
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Peak virtual memory: 984 megabytes
+    Info: Processing ended: Fri Sep 28 17:17:28 2018
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:00:47
 
 

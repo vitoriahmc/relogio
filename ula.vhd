@@ -6,7 +6,8 @@ entity ula is
 port( 
         A,B : in std_logic_vector(3 downto 0); 
         func : in std_logic_vector(2 downto 0); 
-        Q : out std_logic_vector(3 downto 0) 
+        Q : out std_logic_vector(3 downto 0);
+		  Z : out std_logic
         );
 end ula;
 
@@ -34,5 +35,5 @@ Q <= R3;
 				"000" & to_std_logic(A = B) when ((func = "100") and (A=B)) else
 				"1111";
       
-
+Z <= NOT (R3(3) OR R3(2) OR R3(1) OR R3(0));
 end Behavioral;

@@ -1,5 +1,4 @@
 |relogio_descomp
-CLOCK_50 => fluxodedados:FD.clk
 CLOCK_50 => clockprescaler:prescaler.clock
 CLOCK_50 => clockprescaler2:prescaler2.clock
 KEY[0] => ~NO_FANOUT~
@@ -24,48 +23,48 @@ SW[14] => ~NO_FANOUT~
 SW[15] => ~NO_FANOUT~
 SW[16] => ~NO_FANOUT~
 SW[17] => ~NO_FANOUT~
-HEX2[0] <= conversorhex7seg:display0.saida7seg[0]
-HEX2[1] <= conversorhex7seg:display0.saida7seg[1]
-HEX2[2] <= conversorhex7seg:display0.saida7seg[2]
-HEX2[3] <= conversorhex7seg:display0.saida7seg[3]
-HEX2[4] <= conversorhex7seg:display0.saida7seg[4]
-HEX2[5] <= conversorhex7seg:display0.saida7seg[5]
-HEX2[6] <= conversorhex7seg:display0.saida7seg[6]
-HEX3[0] <= conversorhex7seg:display1.saida7seg[0]
-HEX3[1] <= conversorhex7seg:display1.saida7seg[1]
-HEX3[2] <= conversorhex7seg:display1.saida7seg[2]
-HEX3[3] <= conversorhex7seg:display1.saida7seg[3]
-HEX3[4] <= conversorhex7seg:display1.saida7seg[4]
-HEX3[5] <= conversorhex7seg:display1.saida7seg[5]
-HEX3[6] <= conversorhex7seg:display1.saida7seg[6]
-HEX4[0] <= conversorhex7seg:display2.saida7seg[0]
-HEX4[1] <= conversorhex7seg:display2.saida7seg[1]
-HEX4[2] <= conversorhex7seg:display2.saida7seg[2]
-HEX4[3] <= conversorhex7seg:display2.saida7seg[3]
-HEX4[4] <= conversorhex7seg:display2.saida7seg[4]
-HEX4[5] <= conversorhex7seg:display2.saida7seg[5]
-HEX4[6] <= conversorhex7seg:display2.saida7seg[6]
-HEX5[0] <= conversorhex7seg:display3.saida7seg[0]
-HEX5[1] <= conversorhex7seg:display3.saida7seg[1]
-HEX5[2] <= conversorhex7seg:display3.saida7seg[2]
-HEX5[3] <= conversorhex7seg:display3.saida7seg[3]
-HEX5[4] <= conversorhex7seg:display3.saida7seg[4]
-HEX5[5] <= conversorhex7seg:display3.saida7seg[5]
-HEX5[6] <= conversorhex7seg:display3.saida7seg[6]
-HEX6[0] <= conversorhex7seg:display4.saida7seg[0]
-HEX6[1] <= conversorhex7seg:display4.saida7seg[1]
-HEX6[2] <= conversorhex7seg:display4.saida7seg[2]
-HEX6[3] <= conversorhex7seg:display4.saida7seg[3]
-HEX6[4] <= conversorhex7seg:display4.saida7seg[4]
-HEX6[5] <= conversorhex7seg:display4.saida7seg[5]
-HEX6[6] <= conversorhex7seg:display4.saida7seg[6]
-HEX7[0] <= conversorhex7seg:display5.saida7seg[0]
-HEX7[1] <= conversorhex7seg:display5.saida7seg[1]
-HEX7[2] <= conversorhex7seg:display5.saida7seg[2]
-HEX7[3] <= conversorhex7seg:display5.saida7seg[3]
-HEX7[4] <= conversorhex7seg:display5.saida7seg[4]
-HEX7[5] <= conversorhex7seg:display5.saida7seg[5]
-HEX7[6] <= conversorhex7seg:display5.saida7seg[6]
+HEX2[0] << conversorhex7seg:display0.saida7seg[0]
+HEX2[1] << conversorhex7seg:display0.saida7seg[1]
+HEX2[2] << conversorhex7seg:display0.saida7seg[2]
+HEX2[3] << conversorhex7seg:display0.saida7seg[3]
+HEX2[4] << conversorhex7seg:display0.saida7seg[4]
+HEX2[5] << conversorhex7seg:display0.saida7seg[5]
+HEX2[6] << conversorhex7seg:display0.saida7seg[6]
+HEX3[0] << conversorhex7seg:display1.saida7seg[0]
+HEX3[1] << conversorhex7seg:display1.saida7seg[1]
+HEX3[2] << conversorhex7seg:display1.saida7seg[2]
+HEX3[3] << conversorhex7seg:display1.saida7seg[3]
+HEX3[4] << conversorhex7seg:display1.saida7seg[4]
+HEX3[5] << conversorhex7seg:display1.saida7seg[5]
+HEX3[6] << conversorhex7seg:display1.saida7seg[6]
+HEX4[0] << conversorhex7seg:display2.saida7seg[0]
+HEX4[1] << conversorhex7seg:display2.saida7seg[1]
+HEX4[2] << conversorhex7seg:display2.saida7seg[2]
+HEX4[3] << conversorhex7seg:display2.saida7seg[3]
+HEX4[4] << conversorhex7seg:display2.saida7seg[4]
+HEX4[5] << conversorhex7seg:display2.saida7seg[5]
+HEX4[6] << conversorhex7seg:display2.saida7seg[6]
+HEX5[0] << conversorhex7seg:display3.saida7seg[0]
+HEX5[1] << conversorhex7seg:display3.saida7seg[1]
+HEX5[2] << conversorhex7seg:display3.saida7seg[2]
+HEX5[3] << conversorhex7seg:display3.saida7seg[3]
+HEX5[4] << conversorhex7seg:display3.saida7seg[4]
+HEX5[5] << conversorhex7seg:display3.saida7seg[5]
+HEX5[6] << conversorhex7seg:display3.saida7seg[6]
+HEX6[0] << conversorhex7seg:display4.saida7seg[0]
+HEX6[1] << conversorhex7seg:display4.saida7seg[1]
+HEX6[2] << conversorhex7seg:display4.saida7seg[2]
+HEX6[3] << conversorhex7seg:display4.saida7seg[3]
+HEX6[4] << conversorhex7seg:display4.saida7seg[4]
+HEX6[5] << conversorhex7seg:display4.saida7seg[5]
+HEX6[6] << conversorhex7seg:display4.saida7seg[6]
+HEX7[0] << conversorhex7seg:display5.saida7seg[0]
+HEX7[1] << conversorhex7seg:display5.saida7seg[1]
+HEX7[2] << conversorhex7seg:display5.saida7seg[2]
+HEX7[3] << conversorhex7seg:display5.saida7seg[3]
+HEX7[4] << conversorhex7seg:display5.saida7seg[4]
+HEX7[5] << conversorhex7seg:display5.saida7seg[5]
+HEX7[6] << conversorhex7seg:display5.saida7seg[6]
 
 
 |relogio_descomp|fluxodedados:FD
@@ -84,7 +83,7 @@ clk => registrador:UM_regist.clk
 clk => registrador:DM_regist.clk
 clk => registrador:UH_regist.clk
 clk => registrador:DH_regist.clk
-Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z <= ula:ULA.Z
 US_enable => registrador:US_regist.enable
 US_reset => registrador:US_regist.reset
 DS_enable => registrador:DS_regist.enable
@@ -161,6 +160,7 @@ Q[0] <= R3.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= R3.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= R3.DB_MAX_OUTPUT_PORT_TYPE
 Q[3] <= R3.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio_descomp|fluxodedados:FD|registrador:US_regist

@@ -17,7 +17,7 @@ architecture fluxo_arch of fluxodedados is
   
 begin
 
-	ULA: entity work.ULA port map (A => mux_regs_saida, B => mux_vars_saida, func => ula_func, Q => ula_saida);
+	ULA: entity work.ULA port map (A => mux_regs_saida, B => mux_vars_saida, func => ula_func, Q => ula_saida, Z => Z);
 
 	US_regist: entity work.registrador generic map (Vector_Size => 4) port map (d => ula_saida, q => US, CLK => clk, reset => US_reset, ENABLE => US_enable);
 	DS_regist: entity work.registrador generic map (Vector_Size => 4) port map (d => ula_saida, q => DS, CLK => clk, reset => DS_reset, ENABLE => DS_enable);
@@ -36,6 +36,6 @@ begin
 	UH_saida <= UH;
 	DH_saida <= DH;
 	
-	Z <= NOT (ula_saida(3) OR ula_saida(2) OR ula_saida(1) OR ula_saida(0));
+	--Z <= NOT (ula_saida(3) OR ula_saida(2) OR ula_saida(1) OR ula_saida(0));
 
 end architecture;
