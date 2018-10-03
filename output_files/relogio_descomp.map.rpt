@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio_descomp
-Fri Sep 28 17:17:28 2018
+Tue Oct  2 22:01:19 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 28 17:17:28 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct  2 22:01:19 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; relogio_descomp                             ;
 ; Top-level Entity Name              ; relogio_descomp                             ;
@@ -175,7 +175,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -517,7 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -527,7 +527,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 28 17:16:30 2018
+    Info: Processing started: Tue Oct  2 22:00:36 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio_descomp -c relogio_descomp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -616,9 +616,9 @@ Info (21057): Implemented 275 device resources after synthesis - the final resou
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 210 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 984 megabytes
-    Info: Processing ended: Fri Sep 28 17:17:28 2018
-    Info: Elapsed time: 00:00:58
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 979 megabytes
+    Info: Processing ended: Tue Oct  2 22:01:19 2018
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:48
 
 

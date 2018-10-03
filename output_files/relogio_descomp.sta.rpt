@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for relogio_descomp
-Fri Sep 28 17:18:35 2018
+Tue Oct  2 22:02:53 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.8%      ;
+;     Processor 2            ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -401,8 +401,8 @@ No paths to report.
 +-------+--------------------------------------------------+--------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                        ; To Node                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------------+--------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.440 ; ClockPrescaler2:prescaler2|newClock              ; ClockPrescaler2:prescaler2|newClock              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.669      ;
 ; 0.440 ; ClockPrescaler:prescaler|newClock                ; ClockPrescaler:prescaler|newClock                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.669      ;
+; 0.440 ; ClockPrescaler2:prescaler2|newClock              ; ClockPrescaler2:prescaler2|newClock              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.669      ;
 ; 0.441 ; ClockPrescaler2:prescaler2|prescaler_counter[18] ; ClockPrescaler2:prescaler2|prescaler_counter[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.709      ;
 ; 0.539 ; ClockPrescaler:prescaler|prescaler_counter[10]   ; ClockPrescaler:prescaler|prescaler_counter[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.238      ;
 ; 0.541 ; ClockPrescaler:prescaler|prescaler_counter[7]    ; ClockPrescaler:prescaler|prescaler_counter[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.240      ;
@@ -892,8 +892,8 @@ No paths to report.
 +-------+--------------------------------------------------+--------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                        ; To Node                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------------+--------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.387 ; ClockPrescaler2:prescaler2|newClock              ; ClockPrescaler2:prescaler2|newClock              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.597      ;
 ; 0.387 ; ClockPrescaler:prescaler|newClock                ; ClockPrescaler:prescaler|newClock                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.597      ;
+; 0.387 ; ClockPrescaler2:prescaler2|newClock              ; ClockPrescaler2:prescaler2|newClock              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.597      ;
 ; 0.399 ; ClockPrescaler2:prescaler2|prescaler_counter[18] ; ClockPrescaler2:prescaler2|prescaler_counter[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.643      ;
 ; 0.480 ; ClockPrescaler:prescaler|prescaler_counter[10]   ; ClockPrescaler:prescaler|prescaler_counter[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.469      ; 1.120      ;
 ; 0.488 ; ClockPrescaler:prescaler|prescaler_counter[7]    ; ClockPrescaler:prescaler|prescaler_counter[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.469      ; 1.128      ;
@@ -2009,7 +2009,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Sep 28 17:18:30 2018
+    Info: Processing started: Tue Oct  2 22:02:48 2018
 Info: Command: quartus_sta relogio_descomp -c relogio_descomp
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2097,9 +2097,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 881 megabytes
-    Info: Processing ended: Fri Sep 28 17:18:35 2018
+    Info: Peak virtual memory: 892 megabytes
+    Info: Processing ended: Tue Oct  2 22:02:53 2018
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

@@ -35,7 +35,5 @@ begin
 	DM_saida <= DM;
 	UH_saida <= UH;
 	DH_saida <= DH;
-	
-	--Z <= NOT (ula_saida(3) OR ula_saida(2) OR ula_saida(1) OR ula_saida(0));
 
 end architecture;
