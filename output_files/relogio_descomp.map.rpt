@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio_descomp
-Thu Oct  4 15:17:25 2018
+Thu Oct  4 15:35:28 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -59,13 +59,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct  4 15:17:24 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct  4 15:35:28 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; relogio_descomp                             ;
 ; Top-level Entity Name              ; relogio_descomp                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 205                                         ;
-;     Total combinational functions  ; 175                                         ;
+; Total logic elements               ; 207                                         ;
+;     Total combinational functions  ; 177                                         ;
 ;     Dedicated logic registers      ; 88                                          ;
 ; Total registers                    ; 88                                          ;
 ; Total pins                         ; 65                                          ;
@@ -202,16 +202,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 205          ;
+; Estimated Total logic elements              ; 207          ;
 ;                                             ;              ;
-; Total combinational functions               ; 175          ;
+; Total combinational functions               ; 177          ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 86           ;
-;     -- 3 input functions                    ; 29           ;
-;     -- <=2 input functions                  ; 60           ;
+;     -- 4 input functions                    ; 100          ;
+;     -- 3 input functions                    ; 23           ;
+;     -- <=2 input functions                  ; 54           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 129          ;
+;     -- normal mode                          ; 131          ;
 ;     -- arithmetic mode                      ; 46           ;
 ;                                             ;              ;
 ; Total registers                             ; 88           ;
@@ -224,8 +224,8 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; mux2:mux_2|Y ;
 ; Maximum fan-out                             ; 44           ;
-; Total fan-out                               ; 897          ;
-; Average fan-out                             ; 2.28         ;
+; Total fan-out                               ; 923          ;
+; Average fan-out                             ; 2.34         ;
 +---------------------------------------------+--------------+
 
 
@@ -234,17 +234,17 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name      ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+------------------+--------------+
-; |relogio_descomp                ; 175 (0)             ; 88 (0)                    ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |relogio_descomp                                       ; relogio_descomp  ; work         ;
+; |relogio_descomp                ; 177 (0)             ; 88 (0)                    ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |relogio_descomp                                       ; relogio_descomp  ; work         ;
 ;    |ClockPrescaler2:prescaler2| ; 25 (25)             ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|ClockPrescaler2:prescaler2            ; ClockPrescaler2  ; work         ;
 ;    |ClockPrescaler:prescaler|   ; 33 (33)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|ClockPrescaler:prescaler              ; ClockPrescaler   ; work         ;
-;    |SM1:mef|                    ; 32 (32)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|SM1:mef                               ; SM1              ; work         ;
+;    |SM1:mef|                    ; 35 (35)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|SM1:mef                               ; SM1              ; work         ;
 ;    |conversorHex7Seg:display0|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display0             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display1|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display1             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display2|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display2             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display3|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display3             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display4|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display4             ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display5|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|conversorHex7Seg:display5             ; conversorHex7Seg ; work         ;
-;    |fluxodedados:FD|            ; 42 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD                       ; fluxodedados     ; work         ;
+;    |fluxodedados:FD|            ; 41 (0)              ; 24 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD                       ; fluxodedados     ; work         ;
 ;       |mux:mux_regs|            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|mux:mux_regs          ; mux              ; work         ;
 ;       |mux:mux_vars|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|mux:mux_vars          ; mux              ; work         ;
 ;       |registrador:DH_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:DH_regist ; registrador      ; work         ;
@@ -253,7 +253,7 @@ refer to the applicable agreement for further details.
 ;       |registrador:UH_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:UH_regist ; registrador      ; work         ;
 ;       |registrador:UM_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:UM_regist ; registrador      ; work         ;
 ;       |registrador:US_regist|   ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|registrador:US_regist ; registrador      ; work         ;
-;       |ula:ULA|                 ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|ula:ULA               ; ula              ; work         ;
+;       |ula:ULA|                 ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|fluxodedados:FD|ula:ULA               ; ula              ; work         ;
 ;    |mux2:mux_2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |relogio_descomp|mux2:mux_2                            ; mux2             ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -497,18 +497,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 24                          ;
 ;     SCLR              ; 42                          ;
 ;     plain             ; 22                          ;
-; cycloneiii_lcell_comb ; 175                         ;
+; cycloneiii_lcell_comb ; 177                         ;
 ;     arith             ; 46                          ;
 ;         2 data inputs ; 40                          ;
 ;         3 data inputs ; 6                           ;
-;     normal            ; 129                         ;
+;     normal            ; 131                         ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 86                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 100                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 4.84                        ;
+; Max LUT depth         ; 9.30                        ;
+; Average LUT depth     ; 4.69                        ;
 +-----------------------+-----------------------------+
 
 
@@ -517,7 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -527,7 +527,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Oct  4 15:15:26 2018
+    Info: Processing started: Thu Oct  4 15:34:01 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio_descomp -c relogio_descomp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -611,14 +611,14 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[16]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[17]" File: /home/isabella/Documentos/Insper/6oSemestre/Design Comp/relogio/relogio_descomp.vhd Line: 10
-Info (21057): Implemented 274 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 276 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 209 logic cells
+    Info (21061): Implemented 211 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 978 megabytes
-    Info: Processing ended: Thu Oct  4 15:17:25 2018
-    Info: Elapsed time: 00:01:59
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 975 megabytes
+    Info: Processing ended: Thu Oct  4 15:35:28 2018
+    Info: Elapsed time: 00:01:27
+    Info: Total CPU time (on all processors): 00:00:45
 
 
