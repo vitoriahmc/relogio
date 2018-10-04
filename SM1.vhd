@@ -175,7 +175,7 @@ BEGIN
                 WHEN ZeraUH_2 =>
                     reg_fstate <= IncrementaDH;
 
-                    reg_palavra <= "010010000100100";
+                    reg_palavra <= "010010000000100";
                 WHEN IncrementaDH =>
                     reg_fstate <= IncrementaUS;
 
