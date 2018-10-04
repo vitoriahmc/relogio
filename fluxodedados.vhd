@@ -27,7 +27,7 @@ begin
 	DH_regist: entity work.registrador generic map (Vector_Size => 4) port map (d => ula_saida, q => DH, CLK => clk, reset => DH_reset, ENABLE => DH_enable); 
 	
 	mux_regs: entity work.mux port map (A => US,B => DS, C => UM, D => DM, E => UH, F => DH, SEL => mux1, Y => mux_regs_saida);
-	mux_vars: entity work.mux port map (A => "1010",B => "0001", C => "0010", D => "0110", E => "0011", F => "1001", SEL => mux2, Y => mux_vars_saida);
+	mux_vars: entity work.mux port map (A => "1010",B => "0001", C => "0010", D => "0110", E => "0100", F => "1001", SEL => mux2, Y => mux_vars_saida);
 	
 	US_saida <= US;
 	DS_saida <= DS;

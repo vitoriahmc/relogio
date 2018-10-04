@@ -2,17 +2,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity ClockPrescaler2 is
+entity ClockPrescaler3 is
     port(
         clock   : in STD_LOGIC; -- 50 Mhz
         final_clock     : out STD_LOGIC
     );
-end ClockPrescaler2;
+end ClockPrescaler3;
 
-architecture Behavioral of ClockPrescaler2 is
+architecture Behavioral of ClockPrescaler3 is
     -- prescaler should be (clock_speed/desired_clock_speed)/2 because you want a rising edge every period
-    signal prescaler: STD_LOGIC_VECTOR(16 downto 0) := "11110100001001000"; -- 125,000 in binary
-    signal prescaler_counter: STD_LOGIC_VECTOR(16 downto 0) := (others => '0');
+    signal prescaler: STD_LOGIC_VECTOR(14 downto 0) := "110000110101000"; -- 25000 in binary
+    signal prescaler_counter: STD_LOGIC_VECTOR(14 downto 0) := (others => '0');
     signal newClock : std_logic := '0';
 begin
 

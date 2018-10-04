@@ -1,12 +1,13 @@
 |relogio_descomp
 CLOCK_50 => clockprescaler:prescaler.clock
 CLOCK_50 => clockprescaler2:prescaler2.clock
+CLOCK_50 => clockprescaler3:prescaler3.clock
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-SW[0] => mux2:mux_2.SEL
-SW[1] => ~NO_FANOUT~
+SW[0] => mux2:mux_3entradas.SEL[1]
+SW[1] => mux2:mux_3entradas.SEL[0]
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
 SW[4] => ~NO_FANOUT~
@@ -435,15 +436,37 @@ clock => prescaler_counter[13].CLK
 clock => prescaler_counter[14].CLK
 clock => prescaler_counter[15].CLK
 clock => prescaler_counter[16].CLK
-clock => prescaler_counter[17].CLK
 final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|relogio_descomp|mux2:mux_2
-SEL => Y.OUTPUTSELECT
-A => Y.DATAB
-B => Y.DATAA
-Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+|relogio_descomp|ClockPrescaler3:prescaler3
+clock => newClock.CLK
+clock => prescaler_counter[0].CLK
+clock => prescaler_counter[1].CLK
+clock => prescaler_counter[2].CLK
+clock => prescaler_counter[3].CLK
+clock => prescaler_counter[4].CLK
+clock => prescaler_counter[5].CLK
+clock => prescaler_counter[6].CLK
+clock => prescaler_counter[7].CLK
+clock => prescaler_counter[8].CLK
+clock => prescaler_counter[9].CLK
+clock => prescaler_counter[10].CLK
+clock => prescaler_counter[11].CLK
+clock => prescaler_counter[12].CLK
+clock => prescaler_counter[13].CLK
+clock => prescaler_counter[14].CLK
+final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|mux2:mux_3entradas
+SEL[0] => Mux0.IN1
+SEL[1] => Mux0.IN0
+A => Mux0.IN2
+A => Mux0.IN3
+B => Mux0.IN4
+C => Mux0.IN5
+Y <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio_descomp|conversorHex7Seg:display0

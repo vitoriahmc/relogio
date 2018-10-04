@@ -19,7 +19,7 @@ architecture comportamento of relogio_descomp is
 
 	signal auxMuxRegs, auxMuxVars, auxUla_func : std_logic_vector(2 downto 0) := "000";
 
-	signal clock_segundo, clock_segundo2, clock_segundo_oficial: std_logic;
+	signal clock_segundo, clock_segundo2, clock_segundo3, clock_segundo_oficial: std_logic;
 	
 	signal auxUS_enable, auxDS_enable, auxUM_enable, auxDM_enable, auxUH_enable, auxDH_enable: std_logic;
 
@@ -56,7 +56,12 @@ begin
 			clock => CLOCK_50, final_clock => clock_segundo2
 			);
 			
-	mux_2: entity work.mux2 port map (A => clock_segundo,B => clock_segundo2, SEL => SW(0), Y => clock_segundo_oficial);
+	prescaler3: entity work.ClockPrescaler3
+		Port map(
+			clock => CLOCK_50, final_clock => clock_segundo3
+			);
+			
+	mux_3entradas: entity work.mux2 port map (A => clock_segundo,B => clock_segundo2, C=> clock_segundo3, SEL => (SW(0) & SW(1)), Y => clock_segundo_oficial);
 				
   -- Resultado da operacao executada:
   display0 : entity work.conversorHex7seg
