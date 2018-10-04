@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Oct  2 22:01:19 2018
+Analysis & Synthesis Status : Successful - Thu Oct  4 15:17:24 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : relogio_descomp
 Top-level Entity Name : relogio_descomp
 Family : Cyclone IV E
-Total logic elements : 206
-    Total combinational functions : 176
-    Dedicated logic registers : 89
-Total registers : 89
+Total logic elements : 205
+    Total combinational functions : 175
+    Dedicated logic registers : 88
+Total registers : 88
 Total pins : 65
 Total virtual pins : 0
 Total memory bits : 0
