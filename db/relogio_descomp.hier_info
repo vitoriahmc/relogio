@@ -1,7 +1,12 @@
 |relogio_descomp
+CLOCK_50 => fluxodedados:FD.clk
 CLOCK_50 => clockprescaler:prescaler.clock
 CLOCK_50 => clockprescaler2:prescaler2.clock
 CLOCK_50 => clockprescaler3:prescaler3.clock
+CLOCK_50 => edgedetector:detector.clk
+CLOCK_50 => edgedetector:detector2.clk
+CLOCK_50 => edgedetector:detector3.clk
+CLOCK_50 => sm1:mef.clock
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
@@ -414,6 +419,7 @@ clock => prescaler_counter[20].CLK
 clock => prescaler_counter[21].CLK
 clock => prescaler_counter[22].CLK
 clock => prescaler_counter[23].CLK
+clock => prescaler_counter[24].CLK
 final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -457,6 +463,27 @@ clock => prescaler_counter[12].CLK
 clock => prescaler_counter[13].CLK
 clock => prescaler_counter[14].CLK
 final_clock <= newClock.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|edgeDetector:detector
+clk => saidaQ.CLK
+entrada => saidaQ.DATAIN
+entrada => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|edgeDetector:detector2
+clk => saidaQ.CLK
+entrada => saidaQ.DATAIN
+entrada => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relogio_descomp|edgeDetector:detector3
+clk => saidaQ.CLK
+entrada => saidaQ.DATAIN
+entrada => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |relogio_descomp|mux2:mux_3entradas
@@ -981,7 +1008,7 @@ saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 |relogio_descomp|SM1:mef
 reset => reg_fstate.IncrementaUS.OUTPUTSELECT
-reset => reg_fstate.ComparaUSCom9.OUTPUTSELECT
+reset => reg_fstate.ComparaUSCom10.OUTPUTSELECT
 reset => reg_fstate.ZeraUS.OUTPUTSELECT
 reset => reg_fstate.IncrementaDS.OUTPUTSELECT
 reset => reg_fstate.ComparaDSCom6.OUTPUTSELECT
@@ -1000,6 +1027,7 @@ reset => reg_fstate.ZeraDH.OUTPUTSELECT
 reset => reg_fstate.ComparaUHCom10.OUTPUTSELECT
 reset => reg_fstate.ZeraUH_2.OUTPUTSELECT
 reset => reg_fstate.IncrementaDH.OUTPUTSELECT
+reset => reg_fstate.Espera.OUTPUTSELECT
 reset => reg_palavra[14].OUTPUTSELECT
 reset => reg_palavra[13].OUTPUTSELECT
 reset => reg_palavra[11].OUTPUTSELECT
@@ -1032,17 +1060,19 @@ clock => fstate~1.DATAIN
 Z => reg_fstate.DATAB
 Z => reg_fstate.DATAB
 Z => reg_fstate.DATAB
-Z => Selector0.IN2
-Z => Selector0.IN3
-Z => Selector0.IN4
-Z => Selector7.IN0
-Z => reg_fstate.DATAB
-Z => reg_fstate.DATAB
-Z => reg_fstate.DATAB
+Z => Selector7.IN2
+Z => Selector7.IN3
+Z => Selector7.IN4
 Z => Selector6.IN0
-Z => Selector0.IN5
-Z => Selector0.IN6
-Z => Selector0.IN7
+Z => reg_fstate.DATAB
+Z => reg_fstate.DATAB
+Z => reg_fstate.DATAB
+Z => Selector5.IN0
+Z => Selector7.IN5
+Z => Selector7.IN6
+Z => Selector7.IN7
+start => reg_fstate.DATAB
+start => Selector7.IN8
 palavra[0] <= palavra.DB_MAX_OUTPUT_PORT_TYPE
 palavra[1] <= palavra.DB_MAX_OUTPUT_PORT_TYPE
 palavra[2] <= palavra.DB_MAX_OUTPUT_PORT_TYPE

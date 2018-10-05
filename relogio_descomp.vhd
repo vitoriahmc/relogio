@@ -19,7 +19,9 @@ architecture comportamento of relogio_descomp is
 
 	signal auxMuxRegs, auxMuxVars, auxUla_func : std_logic_vector(2 downto 0) := "000";
 
-	signal clock_segundo, clock_segundo2, clock_segundo3, clock_segundo_oficial: std_logic;
+	signal clock_segundo, clock_segundo2, clock_segundo3: std_logic;
+	
+	signal clock_segundo_sinal1, clock_segundo_sinal2, clock_segundo_sinal3, clock_segundo_sinal : std_logic;
 	
 	signal auxUS_enable, auxDS_enable, auxUM_enable, auxDM_enable, auxUH_enable, auxDH_enable: std_logic;
 
@@ -34,7 +36,7 @@ begin
   FD : entity work.fluxodedados (fluxo_arch) 
     Port map (
 		mux1 => auxMuxRegs, mux2 => auxMuxVars,
-		Z => auxZ, ula_func => auxUla_func, clk => clock_segundo_oficial,
+		Z => auxZ, ula_func => auxUla_func, clk => CLOCK_50,
 		US_enable => auxUS_enable, US_reset => '0',
 		DS_enable => auxDS_enable, DS_reset => '0',
 		UM_enable => auxUM_enable, UM_reset => '0',
@@ -61,7 +63,20 @@ begin
 			clock => CLOCK_50, final_clock => clock_segundo3
 			);
 			
-	mux_3entradas: entity work.mux2 port map (A => clock_segundo,B => clock_segundo2, C=> clock_segundo3, SEL => (SW(0) & SW(1)), Y => clock_segundo_oficial);
+	detector: entity work.edgeDetector
+		Port map(
+			clk => CLOCK_50, entrada => clock_segundo, saida => clock_segundo_sinal1);
+			
+	detector2: entity work.edgeDetector
+		Port map(
+			clk => CLOCK_50, entrada => clock_segundo2, saida => clock_segundo_sinal2);
+
+	detector3: entity work.edgeDetector
+		Port map(
+			clk => CLOCK_50, entrada => clock_segundo3, saida => clock_segundo_sinal3);
+	 
+			
+	mux_3entradas: entity work.mux2 port map (A => clock_segundo_sinal1,B => clock_segundo_sinal2, C=> clock_segundo_sinal3, SEL => (SW(0) & SW(1)), Y => clock_segundo_sinal);
 				
   -- Resultado da operacao executada:
   display0 : entity work.conversorHex7seg
@@ -83,8 +98,8 @@ begin
     Port map (saida7seg => HEX7, dadoHex => auxDH_saida);
 	 
 	mef : entity work.SM1
-    port map( reset => '0', clock => clock_segundo_oficial,
-				  Z => auxZ, palavra => auxPalavra);			  
+    port map( reset => '0', clock => CLOCK_50,
+				  Z => auxZ, palavra => auxPalavra, start => clock_segundo_sinal);			  
 	
 	auxUS_enable <= auxPalavra(6);
 	auxDS_enable <= auxPalavra(7);

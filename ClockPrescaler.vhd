@@ -11,8 +11,8 @@ end ClockPrescaler;
 
 architecture Behavioral of ClockPrescaler is
     -- prescaler should be (clock_speed/desired_clock_speed)/2 because you want a rising edge every period
-    signal prescaler: STD_LOGIC_VECTOR(23 downto 0) := "101111101011110000100000"; -- 12,500,000 in binary
-    signal prescaler_counter: STD_LOGIC_VECTOR(23 downto 0) := (others => '0');
+    signal prescaler: STD_LOGIC_VECTOR(24 downto 0) := "1011111010111100001000000"; -- 12,500,000 in binary
+    signal prescaler_counter: STD_LOGIC_VECTOR(24 downto 0) := (others => '0');
     signal newClock : std_logic := '0';
 begin
 
